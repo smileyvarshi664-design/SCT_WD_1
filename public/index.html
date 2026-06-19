@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Responsive Landing Page</title>
+
+
+<style>
+
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+
+}
+
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+
+body{
+
+background:#f4f7ff;
+color:#333;
+
+}
+
+
+
+/* FIXED NAVBAR */
+
+.navbar{
+
+position:fixed;
+top:0;
+width:100%;
+padding:20px 50px;
+background:linear-gradient(90deg,#6a11cb,#2575fc);
+z-index:1000;
+transition:0.4s;
+
+}
+
+
+
+.navbar.scrolled{
+
+background:#111;
+box-shadow:0 5px 20px #000;
+
+}
+
+
+
+.nav-container{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+
+
+.logo{
+
+font-size:30px;
+font-weight:bold;
+color:white;
+
+}
+
+
+
+.logo span{
+
+color:#ffeb3b;
+
+}
+
+
+
+.menu{
+
+display:flex;
+list-style:none;
+gap:30px;
+
+}
+
+
+
+.menu a{
+
+text-decoration:none;
+color:white;
+font-size:18px;
+padding:8px 15px;
+border-radius:20px;
+transition:0.3s;
+
+}
+
+
+
+/* HOVER EFFECT */
+
+.menu a:hover{
+
+background:#ff4081;
+color:white;
+
+}
+
+
+
+/* SECTIONS */
+
+
+section{
+
+height:100vh;
+padding:120px 10%;
+
+}
+
+
+
+.home{
+
+background:linear-gradient(
+135deg,
+#667eea,
+#764ba2
+);
+
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+}
+
+
+
+.home h1{
+
+font-size:55px;
+
+}
+
+
+
+.home p{
+
+font-size:20px;
+margin:20px;
+
+}
+
+
+
+button{
+
+padding:15px 30px;
+border:none;
+border-radius:30px;
+background:#ffeb3b;
+cursor:pointer;
+font-size:18px;
+
+}
+
+
+
+.about{
+
+background:#ffe082;
+
+}
+
+
+.services{
+
+background:#80deea;
+
+}
+
+
+
+.contact{
+
+background:#f8bbd0;
+
+}
+
+
+
+.card{
+
+background:white;
+padding:30px;
+margin:20px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 20px #aaa;
+
+}
+
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+
+.navbar{
+
+padding:20px;
+
+}
+
+
+.menu{
+
+gap:10px;
+
+}
+
+
+.menu a{
+
+font-size:14px;
+padding:5px;
+
+}
+
+
+.home h1{
+
+font-size:35px;
+
+}
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+<nav class="navbar" id="navbar">
+
+
+<div class="nav-container">
+
+
+<div class="logo">
+
+NEXUS<span>.</span>
+
+</div>
+
+
+
+<ul class="menu">
+
+
+<li>
+<a href="#home">
+Home
+</a>
+</li>
+
+
+<li>
+<a href="#about">
+About
+</a>
+</li>
+
+
+<li>
+<a href="#services">
+Services
+</a>
+</li>
+
+
+<li>
+<a href="#contact">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+
+
+</div>
+
+
+</nav>
+
+
+
+
+
+
+<section class="home" id="home">
+
+
+<div>
+
+
+<h1>
+Next Generation Digital Solutions
+</h1>
+
+
+<p>
+Modern responsive landing page with interactive navigation
+</p>
+
+
+<button>
+Explore Now
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section class="about" id="about">
+
+
+<div class="card">
+
+<h1>
+About Us
+</h1>
+
+
+<p>
+
+We create creative websites with modern UI designs.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="services" id="services">
+
+
+<div class="card">
+
+
+<h1>
+Our Services
+</h1>
+
+
+<p>
+Web Design | Development | UI/UX
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="contact" id="contact">
+
+
+<div class="card">
+
+
+<h1>
+Contact Us
+</h1>
+
+
+<p>
+Email: nexus@example.com
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<script>
+
+
+let nav=document.getElementById("navbar");
+
+
+
+window.addEventListener("scroll",function(){
+
+
+if(window.scrollY>50){
+
+
+nav.classList.add("scrolled");
+
+
+}
+
+else{
+
+
+nav.classList.remove("scrolled");
+
+
+}
+
+
+});
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>

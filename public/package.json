@@ -1,0 +1,14 @@
+{
+  "name": "responsive-interactive-navigation-landing-page",
+  "version": "1.0.0",
+  "description": "Professional Dark Minimalist Neon Accent Landing Page Application.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "author": "Software Engineer",
+  "license": "MIT"
+}
